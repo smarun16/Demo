@@ -946,11 +946,8 @@ class DashBoardRequestViewController: UIViewController,CLLocationManagerDelegate
                     self.goOffline()
                 }
                 OBJ_SESSION?.setChatInfo(NSMutableArray())
-                
-//                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {() -> Void in
-//                    
-//                    self.myHubProxyConnection.stop()
-//                })
+                self.myHubProxyConnection.stop()
+
             })
             
             var aMutableArray = [Any]()
@@ -1667,6 +1664,7 @@ class DashBoardRequestViewController: UIViewController,CLLocationManagerDelegate
                 print("Connection timed out. Restarting...")
 
                 self?.myHubProxyConnection.start()
+                
             }
         }
     }
