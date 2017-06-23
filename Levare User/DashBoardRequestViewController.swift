@@ -2403,9 +2403,8 @@ class DashBoardRequestViewController: UIViewController,CLLocationManagerDelegate
                         
                     }
                     
-                    // OBJ_SESSION?.setChatInfo(NSMutableArray())
-                    //self.myHubProxyConnection.stop()
-                }
+                    self.myHubProxyConnection.stop()
+                 }
                 else {
                     
                     if error.debugDescription.characters.count > 0 {
