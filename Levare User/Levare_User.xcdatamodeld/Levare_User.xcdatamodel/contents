@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Favourite_type" representedClassName="Favourite_type" syncable="YES" codeGenerationType="class">
+        <attribute name="customer_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_filter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_primary_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_type_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourite_updated_on" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Service_type" syncable="YES">
+        <attribute name="last_updated_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_type_icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_type_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_type_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicle_max_range" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Favourite_type" positionX="-63" positionY="18" width="128" height="180"/>
+        <element name="Service_type" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>

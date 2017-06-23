@@ -1,0 +1,111 @@
+//
+//  PrefixHeader.pch
+//  Levare User
+//
+//  Created by AngMac137 on 11/16/16.
+//  Copyright © 2016 AngMac137. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#pragma mark - Default Libraries
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MessageUI/MessageUI.h>
+#import <Social/Social.h>
+
+#import "TestFairy.h"
+#define NSLog(s, ...) do { NSLog(s, ##__VA_ARGS__); TFLog(s, ##__VA_ARGS__); } while (0)
+
+#pragma mark - App Delegate
+#import "AppDelegate.h"
+
+// pod
+#import "MWPhotoBrowser.h"
+#import "UIView+NibLoading.h"
+#import "UITextView+Placeholder.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UITextView+Placeholder.h"
+//#import "LGSemiModalNavViewController.h"
+#import <MapKit/MapKit.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import <GooglePlaces/GooglePlaces.h>
+#import <Crashlytics/Crashlytics.h>
+#import "SignalR.h"
+
+// Vendor
+#import "UIScrollView+TPKeyboardAvoidingAdditions.h"
+#import "HMSegmentedControl.h"
+#import "UIPopoverListView.h"
+#import "MMDrawerController.h"
+#import "RatingView.h"
+#import "DGActivityIndicatorView.h"
+#import "SWTableViewCell.h"
+
+// To get Country Code
+#import "CountryListViewController.h"
+#import "EMCCountryPickerController.h"
+#import "CountryListDataSource.h"
+#import "UIImage+UIImage_EMCImageResize.h"
+#import "EMCCountryDelegate.h"
+
+//Tag
+#import "TagServiceType.h"
+#import "TagFavouriteType.h"
+#import "TagChatInfo.h"
+
+// Manager & Session
+#import "HttpManager.h"
+#import "Session.h"
+#import "Session2.h"
+#import "DbManager.h"
+#import "CoreDataManager.h"
+
+// Macros
+#import "ArrayValues.h"
+#import "CommonValues.h"
+#import "ImageValues.h"
+#import "KeyValues.h"
+#import "SharedObjectValues.h"
+
+// Helper
+#import "Navigation.h"
+#import "Helper.h"
+#import "HelperViewController.h"
+
+// category
+#import "NSString + Validation.h"
+#import "UITableView+TableViewAnimations.h"
+#import "UIButton+Activity.h"
+
+//View Controller
+#import "LUPaymentOptionViewController.h"
+#import "LUMenuProfileViewController.h"
+#import "LUMenuViewController.h"
+#import "LUDashBoardViewController.h"
+#import "LUHomeViewController.h"
+#import "LUFavouritePopViewController.h"
+#import "LUPaymentOptionViewController.h"
+#import "LUAddFriendsViewController.h"
+#import "LUNotificationViewController.h"
+#import "LUChatViewController.h"
+#import "LUAddCardViewController.h"
+#import "LUFavouriteSearchViewController.h"
+#import "LUInvoiceViewController.h"
+#import "LUDashBoardRequestViewController.h"
+
+
+// TableView Cell
+
+
+#endif /* PrefixHeader_pch */

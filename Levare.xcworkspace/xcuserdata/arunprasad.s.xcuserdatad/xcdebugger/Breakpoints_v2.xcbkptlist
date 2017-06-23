@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Levare User/Model/HttpManager/HttpManager.m"
+            timestampString = "519201770.367893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "956"
+            endingLineNumber = "956"
+            landmarkName = "-sendRating:completedBlock:failedBlock:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HttpManager sendRating:completedBlock:failedBlock:]"
+                  moduleName = "Levare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arunprasad.s/Documents/Arun%20Prasad/IOS/ProjectInProgress/Levare/Swift/Code/Levere%20User/Levare%20User/Model/HttpManager/HttpManager.m"
+                  timestampString = "519282949.243035"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "957"
+                  endingLineNumber = "957"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[HttpManager sendRating:completedBlock:failedBlock:]_block_invoke"
+                  moduleName = "Levare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arunprasad.s/Documents/Arun%20Prasad/IOS/ProjectInProgress/Levare/Swift/Code/Levere%20User/Levare%20User/Model/HttpManager/HttpManager.m"
+                  timestampString = "519282949.245621"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "957"
+                  endingLineNumber = "957"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Levare User/Model/HttpManager/HttpManager.m"
+            timestampString = "519214539.707442"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "959"
+            endingLineNumber = "959"
+            landmarkName = "-sendRating:completedBlock:failedBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Levare User/Model/HttpManager/HttpManager.m"
+            timestampString = "519214540.587405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "966"
+            endingLineNumber = "966"
+            landmarkName = "-sendRating:completedBlock:failedBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Levare User/LUInvoiceViewController.m"
+            timestampString = "519233296.69115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "-callWebService"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LUInvoiceViewController callWebService]"
+                  moduleName = "Levare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arunprasad.s/Documents/Arun%20Prasad/IOS/ProjectInProgress/Levare/Swift/Code/Levere%20User/Levare%20User/LUInvoiceViewController.m"
+                  timestampString = "519282949.257302"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "268"
+                  endingLineNumber = "268"
+                  offsetFromSymbolStart = "1575">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[LUInvoiceViewController callWebService]_block_invoke.185"
+                  moduleName = "Levare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arunprasad.s/Documents/Arun%20Prasad/IOS/ProjectInProgress/Levare/Swift/Code/Levere%20User/Levare%20User/LUInvoiceViewController.m"
+                  timestampString = "519282949.258855"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "270"
+                  endingLineNumber = "270"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Levare User/LUInvoiceViewController.m"
+            timestampString = "519233296.69115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "-callWebService"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LUInvoiceViewController callWebService]"
+                  moduleName = "Levare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arunprasad.s/Documents/Arun%20Prasad/IOS/ProjectInProgress/Levare/Swift/Code/Levere%20User/Levare%20User/LUInvoiceViewController.m"
+                  timestampString = "519282949.262268"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "268"
+                  endingLineNumber = "268"
+                  offsetFromSymbolStart = "1575">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[LUInvoiceViewController callWebService]_block_invoke.185"
+                  moduleName = "Levare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arunprasad.s/Documents/Arun%20Prasad/IOS/ProjectInProgress/Levare/Swift/Code/Levere%20User/Levare%20User/LUInvoiceViewController.m"
+                  timestampString = "519282949.263688"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "270"
+                  endingLineNumber = "270"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

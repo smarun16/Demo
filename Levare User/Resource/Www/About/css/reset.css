@@ -1,0 +1,56 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot {
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+ol, ul {
+	list-style: none;
+	padding:0px;
+	margin:0px;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+.clear {
+	clear: both;
+	height:0;
+	overflow:hidden
+}
+.clearfix:after {
+	content:".";
+	height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	display:inline-block;
+}
+/* Hide from IE Mac \*/
+.clearfix {
+	display:block;
+}
+.left {
+	float:left
+}
+.right {
+	float:right
+}
+.noMargin {
+	margin:0
+}
+.noPadding {
+	padding:0
+}

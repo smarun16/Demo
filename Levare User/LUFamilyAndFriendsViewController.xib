@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LUFamilyAndFriendsViewController">
+            <connections>
+                <outlet property="myAlertImageView" destination="91i-BC-EQf" id="688-qX-tHj"/>
+                <outlet property="myAlertLabel" destination="XYB-F7-lze" id="Msu-qf-BWp"/>
+                <outlet property="myAlertView" destination="9zY-8k-9VU" id="6rb-Jb-0Vr"/>
+                <outlet property="myBtnAddContacts" destination="itn-d9-CKP" id="QZn-LR-L4k"/>
+                <outlet property="myNextButtonHeightConstraint" destination="EBw-N7-Ecw" id="B2K-PH-nA6"/>
+                <outlet property="myTblView" destination="hGF-Zw-dGe" id="99Q-ih-AdZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hGF-Zw-dGe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="eSd-F4-INo">
+                        <rect key="frame" x="0.0" y="587" width="375" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4wg-p0-1WA"/>
+                        <outlet property="delegate" destination="-1" id="FES-NV-XVr"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zY-8k-9VU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup Your Family &amp; Friend Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYB-F7-lze">
+                            <rect key="frame" x="40" y="303" width="295" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_fimily_friends" translatesAutoresizingMaskIntoConstraints="NO" id="91i-BC-EQf">
+                            <rect key="frame" x="158" y="223" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="91i-BC-EQf" secondAttribute="height" multiplier="1:1" id="cSX-2y-fcx"/>
+                                <constraint firstAttribute="height" constant="60" id="has-sJ-1p9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easily let your family &amp; friends follow your trip progress and see that you've arrived safely at your destination" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD4-xx-YUP">
+                            <rect key="frame" x="20" y="340" width="334" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lD4-xx-YUP" firstAttribute="centerX" secondItem="9zY-8k-9VU" secondAttribute="centerX" id="1Qn-NO-UMH"/>
+                        <constraint firstItem="XYB-F7-lze" firstAttribute="leading" secondItem="9zY-8k-9VU" secondAttribute="leading" constant="40" id="4Pj-jx-ylK"/>
+                        <constraint firstItem="91i-BC-EQf" firstAttribute="centerX" secondItem="9zY-8k-9VU" secondAttribute="centerX" id="8iP-75-P6w"/>
+                        <constraint firstItem="XYB-F7-lze" firstAttribute="centerY" secondItem="9zY-8k-9VU" secondAttribute="centerY" constant="-20" id="QIj-UY-Und"/>
+                        <constraint firstItem="XYB-F7-lze" firstAttribute="top" secondItem="91i-BC-EQf" secondAttribute="bottom" constant="20" id="eWQ-zk-oq9"/>
+                        <constraint firstItem="lD4-xx-YUP" firstAttribute="leading" secondItem="9zY-8k-9VU" secondAttribute="leading" constant="20" id="l95-rD-gRF"/>
+                        <constraint firstItem="XYB-F7-lze" firstAttribute="centerX" secondItem="9zY-8k-9VU" secondAttribute="centerX" id="qAa-uQ-mIP"/>
+                        <constraint firstItem="lD4-xx-YUP" firstAttribute="top" secondItem="XYB-F7-lze" secondAttribute="bottom" constant="16" id="zxi-es-DK0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itn-d9-CKP">
+                    <rect key="frame" x="20" y="607" width="335" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EBw-N7-Ecw"/>
+                    </constraints>
+                    <state key="normal" title="Add Contacts">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addContactsBtnTapped:" destination="-1" eventType="touchUpInside" id="wvv-9Z-gKE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9zY-8k-9VU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1u4-HJ-WrC"/>
+                <constraint firstAttribute="trailing" secondItem="itn-d9-CKP" secondAttribute="trailing" constant="20" id="5mH-3g-PGF"/>
+                <constraint firstAttribute="bottom" secondItem="9zY-8k-9VU" secondAttribute="bottom" id="CE6-NH-Oue"/>
+                <constraint firstAttribute="trailing" secondItem="hGF-Zw-dGe" secondAttribute="trailing" id="CTL-HH-NOo"/>
+                <constraint firstAttribute="bottom" secondItem="itn-d9-CKP" secondAttribute="bottom" constant="20" id="ESA-B5-bff"/>
+                <constraint firstItem="hGF-Zw-dGe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ha3-C9-qbT"/>
+                <constraint firstItem="hGF-Zw-dGe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RN3-gT-gZ2"/>
+                <constraint firstItem="9zY-8k-9VU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tzg-sW-VgT"/>
+                <constraint firstItem="itn-d9-CKP" firstAttribute="top" secondItem="hGF-Zw-dGe" secondAttribute="bottom" constant="20" id="avF-45-GFa"/>
+                <constraint firstAttribute="trailing" secondItem="9zY-8k-9VU" secondAttribute="trailing" id="p0M-fr-y7m"/>
+                <constraint firstItem="itn-d9-CKP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="wri-2x-hzw"/>
+            </constraints>
+            <point key="canvasLocation" x="-57.5" y="-56.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_fimily_friends" width="60" height="60"/>
+    </resources>
+</document>

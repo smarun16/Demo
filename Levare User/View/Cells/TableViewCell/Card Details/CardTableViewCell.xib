@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="Ted-nq-8X7" userLabel="Card Number Table View Cell" customClass="CardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ted-nq-8X7" id="xnE-OW-HgW">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqA-zZ-omX" customClass="BKCardNumberField">
+                        <rect key="frame" x="8" y="33" width="304" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfe-Bw-OXc" userLabel="Part Card Number">
+                        <rect key="frame" x="8" y="33" width="253" height="32"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="Ted-nq-8X7" id="1i4-SV-3Pj"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit / Debit Card Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OU-gN-P5i">
+                        <rect key="frame" x="8" y="8" width="181" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AqA-zZ-omX" firstAttribute="leading" secondItem="xnE-OW-HgW" secondAttribute="leading" constant="8" id="0Mh-ph-zOU"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="2OU-gN-P5i" secondAttribute="leading" id="91a-yB-Cpp"/>
+                    <constraint firstItem="AqA-zZ-omX" firstAttribute="top" secondItem="nfe-Bw-OXc" secondAttribute="top" id="9yg-t5-NSv"/>
+                    <constraint firstItem="AqA-zZ-omX" firstAttribute="trailing" secondItem="nfe-Bw-OXc" secondAttribute="trailing" constant="51" id="Alb-Qj-gZR"/>
+                    <constraint firstItem="AqA-zZ-omX" firstAttribute="bottom" secondItem="nfe-Bw-OXc" secondAttribute="bottom" id="HzG-vA-9pm"/>
+                    <constraint firstAttribute="trailing" secondItem="AqA-zZ-omX" secondAttribute="trailing" constant="8" id="YeL-ER-2Ev"/>
+                    <constraint firstItem="AqA-zZ-omX" firstAttribute="top" secondItem="xnE-OW-HgW" secondAttribute="centerY" id="bhL-Wg-d0K"/>
+                    <constraint firstAttribute="bottom" secondItem="AqA-zZ-omX" secondAttribute="bottom" id="bpD-Tw-V4o"/>
+                    <constraint firstAttribute="topMargin" secondItem="2OU-gN-P5i" secondAttribute="top" id="gTi-FS-KvJ"/>
+                    <constraint firstItem="nfe-Bw-OXc" firstAttribute="top" secondItem="2OU-gN-P5i" secondAttribute="bottom" constant="8" id="h6f-BF-78x"/>
+                    <constraint firstItem="AqA-zZ-omX" firstAttribute="leading" secondItem="nfe-Bw-OXc" secondAttribute="leading" id="rys-H6-52x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardNumberTextField" destination="AqA-zZ-omX" id="dwq-gM-f47"/>
+                <outlet property="cardPartNumberTextField" destination="nfe-Bw-OXc" id="hjP-Kw-2hi"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="345.5"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="Zbr-OJ-zKJ" userLabel="Card Holder Name Table View Cell" customClass="CardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zbr-OJ-zKJ" id="0w1-au-yEI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name on card" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-VI-ZvH">
+                        <rect key="frame" x="8" y="33" width="304" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name on Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0w-Ke-Gas">
+                        <rect key="frame" x="8" y="8" width="94" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="Q0w-Ke-Gas" secondAttribute="leading" id="0nd-OT-4Dn"/>
+                    <constraint firstItem="L4w-VI-ZvH" firstAttribute="top" secondItem="Q0w-Ke-Gas" secondAttribute="bottom" constant="8" id="1o2-rf-wLs"/>
+                    <constraint firstAttribute="trailing" secondItem="L4w-VI-ZvH" secondAttribute="trailing" constant="8" id="EEJ-gT-KrN"/>
+                    <constraint firstAttribute="bottom" secondItem="L4w-VI-ZvH" secondAttribute="bottom" constant="1" id="M4K-d2-Pow"/>
+                    <constraint firstAttribute="topMargin" secondItem="Q0w-Ke-Gas" secondAttribute="top" id="QEM-YG-eFh"/>
+                    <constraint firstItem="L4w-VI-ZvH" firstAttribute="top" secondItem="0w1-au-yEI" secondAttribute="centerY" id="saQ-X2-rCb"/>
+                    <constraint firstItem="L4w-VI-ZvH" firstAttribute="leading" secondItem="0w1-au-yEI" secondAttribute="leading" constant="8" id="zTK-ds-F9c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardHolderNameTextField" destination="L4w-VI-ZvH" id="gWO-fM-WFh"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="500.5"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="Fnc-Vp-KkL" userLabel="Card Expiry Date and CVV Table View Cell" customClass="CardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fnc-Vp-KkL" id="Dt9-MW-pec">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM / YY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sa-Zh-QIM" customClass="BKCardExpiryField">
+                        <rect key="frame" x="8" y="32" width="150" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6HX-P6-BDb">
+                        <rect key="frame" x="158" y="32" width="154" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-jB-1Ki">
+                        <rect key="frame" x="8" y="10" width="76" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM5-CT-3XT" userLabel="CVV">
+                        <rect key="frame" x="158" y="8" width="30" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6HX-P6-BDb" secondAttribute="trailing" constant="8" id="2r4-Cv-jjS"/>
+                    <constraint firstItem="7sa-Zh-QIM" firstAttribute="top" secondItem="hwp-jB-1Ki" secondAttribute="bottom" constant="8" id="JDJ-KF-PTA"/>
+                    <constraint firstItem="6HX-P6-BDb" firstAttribute="leading" secondItem="7sa-Zh-QIM" secondAttribute="trailing" id="Mbz-Fv-iu8"/>
+                    <constraint firstItem="nM5-CT-3XT" firstAttribute="leading" secondItem="6HX-P6-BDb" secondAttribute="leading" id="Olc-xq-iEL"/>
+                    <constraint firstAttribute="centerXWithinMargins" secondItem="7sa-Zh-QIM" secondAttribute="trailing" constant="2" id="UuQ-2K-Lg7"/>
+                    <constraint firstAttribute="bottom" secondItem="7sa-Zh-QIM" secondAttribute="bottom" constant="1" id="WDh-4e-9ip"/>
+                    <constraint firstItem="6HX-P6-BDb" firstAttribute="top" secondItem="Dt9-MW-pec" secondAttribute="centerY" id="Wod-aS-LZW"/>
+                    <constraint firstAttribute="bottom" secondItem="6HX-P6-BDb" secondAttribute="bottom" constant="1" id="ZKm-0h-ZlR"/>
+                    <constraint firstItem="nM5-CT-3XT" firstAttribute="centerY" secondItem="hwp-jB-1Ki" secondAttribute="centerY" id="bJg-LH-Qmz"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="hwp-jB-1Ki" secondAttribute="leading" id="d4i-O4-ZYp"/>
+                    <constraint firstItem="7sa-Zh-QIM" firstAttribute="leading" secondItem="Dt9-MW-pec" secondAttribute="leading" constant="8" id="dU8-AN-Ogn"/>
+                    <constraint firstItem="7sa-Zh-QIM" firstAttribute="top" secondItem="Dt9-MW-pec" secondAttribute="centerY" id="kYT-pr-8Hb"/>
+                    <constraint firstItem="hwp-jB-1Ki" firstAttribute="top" secondItem="Dt9-MW-pec" secondAttribute="topMargin" constant="2" id="lAs-h5-WGC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardCVV" destination="6HX-P6-BDb" id="OQy-5U-QQ0"/>
+                <outlet property="cardExpiryDate" destination="7sa-Zh-QIM" id="XNT-fw-Nc9"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="645.5"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url("fonts.css");
+/* CSS Document */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+#container .logo {
+	background-image: url(logo.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100px;
+	width: 100%;
+}
+
+#container .cmpy-logo {
+	width: 100%;
+	text-align: center;
+}
+ 
+#container {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+    background-color: color|transparent|initial;
+}
+#container .office1 {
+	width: 100%;
+	float: left;
+}
+#container .office2 {
+	width: 100%;
+	float: left;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #0054A6;
+	line-height: 15px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #4C92DA;
+	line-height: 15px;
+}
+
+
+#address {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #171314;
+    text-align: justify;
+}
+#container a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #0054A6;
+}
+#address .office1 .appre li {
+	text-align: left;
+	background-image: url(li-bullet.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 20px;
+}
+#address .office1 .appre {
+	padding-top: 10px;
+	padding-left: 14px;
+}

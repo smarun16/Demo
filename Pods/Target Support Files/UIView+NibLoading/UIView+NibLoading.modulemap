@@ -1,0 +1,6 @@
+framework module UIView_NibLoading {
+  umbrella header "UIView+NibLoading-umbrella.h"
+
+  export *
+  module * { export * }
+}
